@@ -16,6 +16,7 @@ import dj_database_url
 if os.path.isfile('env.py'):
     import env
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -24,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-wyjqt@at&!lgs^^v-dpu+@@bdn5pgq7$347&ag=e(p7pfd8&=3'
+SECRET_KEY = os.environ.get("+oKp<PC?~3q?gGk")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
